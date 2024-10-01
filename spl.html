@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPL Season 2 - Tournament</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>SPL Season 2 - Tournament</h1>
+        <nav>
+            <ul>
+                <li><a href="#points-table">Points Table</a></li>
+                <li><a href="#upcoming-matches">Upcoming Matches</a></li>
+                <li><a href="#leaderboard">Leaderboard</a></li>
+                <li><a href="#scorecard">Scorecard</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="points-table">
+        <h2>Points Table</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Team</th>
+                    <th>Matches</th>
+                    <th>Wins</th>
+                    <th>Losses</th>
+                    <th>Points</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Team A</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>Team B</td>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>Team C</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="upcoming-matches">
+        <h2>Upcoming Matches</h2>
+        <ul>
+            <li>Match 1: Team A vs Team B - Date: 2024-10-10</li>
+            <li>Match 2: Team C vs Team D - Date: 2024-10-12</li>
+        </ul>
+    </section>
+
+    <section id="leaderboard">
+        <h2>Leaderboard</h2>
+        <ul>
+            <li>1. Player 1 - Team A (200 runs)</li>
+            <li>2. Player 2 - Team B (180 runs)</li>
+            <li>3. Player 3 - Team C (150 runs)</li>
+        </ul>
+    </section>
+
+    <section id="scorecard">
+        <h2>Scorecard</h2>
+        <h3>Team 1 vs Team 2</h3>
+
+        <div class="team-score">
+            <h4>Team 1</h4>
+            <p>Score: <span id="team1-score">0</span>/<span id="team1-wickets">0</span></p>
+            <button onclick="addRuns('team1', 1)">+1 Run</button>
+            <button onclick="addRuns('team1', 2)">+2 Runs</button>
+            <button onclick="addRuns('team1', 4)">+4 Runs</button>
+            <button onclick="addRuns('team1', 6)">+6 Runs</button>
+            <button onclick="addWicket('team1')">+1 Wicket</button>
+        </div>
+
+        <div class="team-score">
+            <h4>Team 2</h4>
+            <p>Score: <span id="team2-score">0</span>/<span id="team2-wickets">0</span></p>
+            <button onclick="addRuns('team2', 1)">+1 Run</button>
+            <button onclick="addRuns('team2', 2)">+2 Runs</button>
+            <button onclick="addRuns('team2', 4)">+4 Runs</button>
+            <button onclick="addRuns('team2', 6)">+6 Runs</button>
+            <button onclick="addWicket('team2')">+1 Wicket</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 SPL Season 2</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
